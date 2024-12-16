@@ -1,75 +1,134 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Navbar Hintergrundfarbe auf Türkis setzen */
+.navbar {
+    background-color: #40E0D0 !important; /* Türkis mit !important für Priorität */
 }
 
-header {
-    background-color: #2c3e50;
+/* Textfarbe der Links in der Navbar auf Schwarz setzen */
+.navbar .navbar-nav .nav-link {
+    color: black; /* Schwarz */
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Hover-Effekt: Links werden bei Hover dunkler */
+.navbar .navbar-nav .nav-link:hover {
+    color: #2C8C8C; /* Dunkler Türkis-Ton beim Hover */
+}
+
+/* Navbar Links im Menü (Dropdown) ebenfalls in Schwarz */
+.navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: black; /* Schwarz */
+}
+
+/* Hover-Effekt für Dropdown-Elemente */
+.navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #2C8C8C; /* Dunkler Türkis-Ton */
     color: white;
-    padding: 10px 20px;
+}
+
+/* Standardmäßig alle Sections ausblenden */
+.section {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute; /* Positioniert die Sections übereinander */
+    top: 0; /* Beginnt am oberen Rand der Seite */
+    left: 0; /* Lässt sie am linken Rand der Seite starten */
+    width: 100%; /* Damit die Section die volle Breite des Containers hat */
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+    padding: 0; /* Entfernt unnötiges Padding */
+    margin: 0; /* Entfernt unnötige Abstände */
+}
+
+.section.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative; /* Setzt die aktive Section zurück in den normalen Layoutfluss */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #343a40; /* Dunkles Grau für die Überschrift */
+}
+
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333; /* Dunkles Grau für Text */
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #0d6efd;
+}
+
+
+.header {
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Erhöht die Lesbarkeit */
+}
+
+.header p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    background-color: #212529; /* Dunkler Footer */
+    color: white;
+    padding: 2rem 0;
     text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #34495e;
-    padding: 10px 0;
-}
-
-nav a {
+.footer a {
+    color: #0d6efd;
     text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-    position: relative;
 }
 
-nav a:hover {
-    background-color: #1abc9c;
-    border-radius: 5px;
+.footer a:hover {
+    text-decoration: underline;
 }
 
-.dropdown {
-    position: relative;
+.btn-primary {
+    background-color: #007bff; /* Helles Blau */
+    border-color: #0069d9;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
-.dropdown-content {
-    display: none;
-    flex-direction: column;
-    background-color: #34495e;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 150px;
-    z-index: 1000;
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0056b3;
 }
 
-.dropdown:hover .dropdown-content {
-    display: flex;
-}
-
-.dropdown-content a {
-    padding: 10px 15px;
-    border: none;
-}
-
-.dropdown-content a:hover {
-    background-color: #1abc9c;
-}
-
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+form input, form select, form textarea {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 10px;
     width: 100%;
+    font-size: 1rem;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
