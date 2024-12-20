@@ -1,134 +1,98 @@
-/* Navbar Hintergrundfarbe auf Türkis setzen */
-.navbar {
-    background-color: #40E0D0 !important; /* Türkis mit !important für Priorität */
-}
+ /* Farbgebung aus den Screenshots */
+      :root {
+            --primary-color: #007B7F; /* Hauptfarbe Türkis */
+            --secondary-color: #002A2B; /* Dunkles Blau */
+            --light-color: #E6FFFF; /* Helles Türkis */
+            --white: #FFFFFF;
+        }
 
-/* Textfarbe der Links in der Navbar auf Schwarz setzen */
-.navbar .navbar-nav .nav-link {
-    color: black; /* Schwarz */
-}
+        body {
+            font-family: Arial, sans-serif;
+        }
 
-.container {
-    margin-top: 20px;
-}
+        .navbar {
+            background-color: var(--primary-color);
+        }
 
-/* Hover-Effekt: Links werden bei Hover dunkler */
-.navbar .navbar-nav .nav-link:hover {
-    color: #2C8C8C; /* Dunkler Türkis-Ton beim Hover */
-}
+        .navbar .nav-link {
+            color: var(--white) !important;
+        }
 
-/* Navbar Links im Menü (Dropdown) ebenfalls in Schwarz */
-.navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
-    color: black; /* Schwarz */
-}
-
-/* Hover-Effekt für Dropdown-Elemente */
-.navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
-    background-color: #2C8C8C; /* Dunkler Türkis-Ton */
-    color: white;
-}
-
-/* Standardmäßig alle Sections ausblenden */
-.section {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute; /* Positioniert die Sections übereinander */
-    top: 0; /* Beginnt am oberen Rand der Seite */
-    left: 0; /* Lässt sie am linken Rand der Seite starten */
-    width: 100%; /* Damit die Section die volle Breite des Containers hat */
-    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
-    padding: 0; /* Entfernt unnötiges Padding */
-    margin: 0; /* Entfernt unnötige Abstände */
-}
-
-.section.active {
-    opacity: 1;
-    visibility: visible;
-    position: relative; /* Setzt die aktive Section zurück in den normalen Layoutfluss */
-    transition: opacity 0.5s ease-in-out;
-}
-
-.section-heading {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 30px;
-    color: #343a40; /* Dunkles Grau für die Überschrift */
-}
-
-.section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333; /* Dunkles Grau für Text */
-}
-
-.feature-icon {
-    font-size: 3rem;
-    color: #0d6efd;
-}
-
-
-.header {
-    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
-    background-size: cover;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
-.header h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Erhöht die Lesbarkeit */
-}
-
-.header p {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    font-weight: 400;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.footer {
-    background-color: #212529; /* Dunkler Footer */
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.footer a {
-    color: #0d6efd;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
-
-.btn-primary {
-    background-color: #007bff; /* Helles Blau */
-    border-color: #0069d9;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.btn-primary:hover {
-    background-color: #0069d9;
-    border-color: #0056b3;
-}
-
-form input, form select, form textarea {
-    border-radius: 0.25rem;
-    border: 1px solid #ced4da;
-    padding: 10px;
-    width: 100%;
-    font-size: 1rem;
-}
-
-form input:focus, form select:focus, form textarea:focus {
+        .navbar .nav-link:hover {
+            color: var(--light-color) !important;
+        }
+        /* Navbar-Button für Login */
+.navbar .btn-outline-primary {
+    margin-left: auto;
     border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    color: #007bff;
 }
+
+.navbar .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+        .header {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+        }
+
+        .section-heading {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        .footer {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: var(--light-color);
+        }
+
+        .footer a:hover {
+            color: var(--primary-color);
+        }
+
+        .faq {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .faq h3 {
+            color: var(--white);
+        }
+
+        .faq p {
+            color: var(--light-color);
+        }

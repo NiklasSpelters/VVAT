@@ -3,177 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VVAT</title>
-    <!-- Bootstrap 5 CSS -->
+    <title>Assistive Technik</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap JS und Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">WAT</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navigation umschalten">
+            <a class="navbar-brand" href="#">VVAT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('start')">Start</a></li>
-                    <!-- Dropdown-Menü bei Projekt -->
+                <!-- Links linksbündig -->
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="projektDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Projekt
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="projektDropdown">
-                            <li><a class="dropdown-item" href="#" onclick="showSection('verbundvorhaben')">Verbundvorhaben</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="showSection('lenkungsgruppe')">Lenkungsgruppe</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="showSection('projektkoordination')">Projektkoordination</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="showSection('projektstandorte')">Projektstandorte</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="showSection('wissenschaftliche-begleitung')">Wissenschaftliche Begleitung</a></li>
+                            <li><a class="dropdown-item" href="#ueberblick">Überblick</a></li>
+                            <li><a class="dropdown-item" href="#details">Details</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#kontakt">Kontakt</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('technologien')">Technologien</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('kontakt')">Kontakt</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#technologien">Technologien</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                    </li>
                 </ul>
+                <!-- Login-Button rechts -->
+                <button class="btn btn-outline-primary" type="button">Login</button>
             </div>
         </div>
     </nav>
-
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <h1>Assistive Technik</h1>
-            <p class="lead">Ein Verbundvorhaben für innovative Technologien</p>
-        </div>
-    </header>
-
-
-    <!-- Sections -->
-    <section class="section active" id="start">
-        <div class="container text-center">
-            <h2 class="section-heading">Unsere Technologien</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div>
-                        <i class="feature-icon bi bi-house"></i>
-                        <h4 class="mt-3">Smartes Wohnen</h4>
-                        <p>Innovative Lösungen für ein barrierefreies und intelligentes Zuhause.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div>
-                        <i class="feature-icon bi bi-heart"></i>
-                        <h4 class="mt-3">Gesundheitsüberwachung</h4>
-                        <p>Modernste Assistenzsysteme zur Förderung von Gesundheit und Wohlbefinden.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div>
-                        <i class="feature-icon bi bi-tools"></i>
-                        <h4 class="mt-3">Assistenztechnik</h4>
-                        <p>Technische Hilfsmittel zur Unterstützung im Alltag und im Beruf.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="verbundvorhaben" class="section">
-        <h2>Verbundvorhaben</h2>
-        <h2>Das sind wir</h2>
-            <p>Das Sozialwerk St. Georg e.V. ist eine innovatives und engagiertes Dienstleistungsunternehmen mit Sitz in Gelsenkirchen, das sich seit 1952 für Menschen mit Assistenzbedarf einsetzt. 
-                Unser Ziel ist es, durch den Einsatz von assistiven Technologien und maßgeschneiderten Lösungen mehr Selbstbestimmung und Lebensqualität für unsere Klienten zu ermöglichen. 
-                Wolfgang Meyer, Vorstand des Sozialnetzwerks, hebt die Bedeutung unseres aktuellen Projekts hervor: "Wir freuen uns sehr über den Start des Verbundvorhabens 'Assistive Technik im Wohnen in der Eingliederungshilfe'. 
-                In den letzten Jahren haben wir erfolgreich assistive Technologie in der Pflege und für Menschen mit demenziellen Beeinträchtigungen eingesetzt.
-                Jetzt erweitern wir unsere Bemühungen, um gemeinsam mit weiteren Leistungserbringern und Hochschulen diese Technologien in der Eingliederungshilfe weiterzuentwickeln und zu erproben.
-                Dies ist ein echtes Leuchtturmprojekt, um die Teilhabenchancen für Menschen mit Assistenzbedarf zu erhöhen und gleichzeitg unsere Arbeitsprozesse zu optimieren."
-            </p>
-    </section>
-    <section id="lenkungsgruppe" class="section">
-        <h2>Lenkungsgruppe</h2>
-        <p>Details zur Lenkungsgruppe...</p>
-    </section>
-    <section id="projektkoordination" class="section">
-        <h2>Projektkoordination</h2>
-        <p>Informationen zur Projektkoordination...</p>
-    </section>
-    <section id="projektstandorte" class="section">
-        <h2>Projektstandorte</h2>
-          <h2>Projektstandorte</h2>
-          <p>Das Projekt "Assisitve Technik im Wohnen in der Eingliederungshilfe" wird an zehn Standorten in ganz Nordrhein-Westfalen durchgeführt.
-            Diese Standorte fungieren als Modellregionen, in denen verschiedene Träger der Eingliederungshilfe eng mit technischen Experten und Forschungseinrichtungen zusammenarbeiten.
-            Ziel ist es, maßgeschneiderte Lösungen zu entwicklen und zu erproben, die den individuellen Bedürfnissen unserer Klienten gerecht werden.
-            Durch den Austausch zwischen den beteiligten Akteuren und die Wissenschaftliche Begeleitung des Projektes gewinnen wir wertvolle Erkenntnisse, die langfristig in die Praxis der Eingliederungshilfe in ganz NRW einfließen können.
-            Gemeinsam gestalten wir eine inklusive Zukunft, in der jeder Mensch die Unterstützung erhält, die er benötigt, um selbstbestimmt leben zu können.
-          </p>
-          <h2>Standorte</h2>
-          <p> Hier kommen jetzt paar Standorte</p>
-    </section>
-    <section id="wissenschaftliche-begleitung" class="section">
-        <h2>Wissenschaftliche Begleitung</h2>
-        <p>Informationen zur wissenschaftlichen Begleitung...</p>
-    </section>
-    <section id="technologien" class="section">
-        <h2>Technologien</h2>
-          <h1>Assistive Technologien im Bereich Wohnen</h1>
-          <p>Assisitve Technologien spielen eine entscheidene Rolle dabei, das Wohnen für Menschen mit unterschiedlichen Bedürfnissen komfortabler und sicherer zu gestalten.
-            Hier sind einige innovative Lösungen, die den Alltag erleichtern und die Selbständigkeit fördern: </p>
-            <h3>Smart Home Systeme</h3>
-            <p>Diese Systeme integrieren verschiedene Technologien, um das Zuhause intelligenter zu machen.
-                Sie ermöglichen die Steuerung von Licht, Heizung und anderen Geräten über Sprachbefehle und mobile Apps.
-            Dies ist besonders hilfreich für Menschen mit Mobilitätseinschränkungen. </p>
-            <h3>KI-gestützte Unterstützung für Pflegekräfte</h3>
-            <p>künstliche Intelligenz (KI) - KI-Systeme können den Bedarf an Unterstützung erkennen, indem sie Verhaltensmuster überwachen und Veränderungen identifizieren.
-                Dadurch werden Reaktionszeiten verkürzt, da Pflegekräfte sofort informiert werden, wenn Hilfte benötigt wird. Diese Technologie verbessert die Lebensqualität der Betroffenen erheblich.
-            </p>
-            <h3>intelligente Herdabschaltung</h3>
-            <p>In der Küche sorgt eine intelligente Herdabschaltung dafür, dass der Herd automatisch ausgeht, wenn das Haus verlassen wird. Diese Funktion bietet nicht nur Sicherheit, sondern auch Seelenfrieden für Angehörige und Pflegekräfte.</p>
-    </section>
-    <section id="kontakt" class="section">
-        <h2>Kontakt</h2>
-           <h2>Wir freuen uns auf ihre Nachricht!</h2>
-           <p>Wir setzen uns leidenschaftlich für die Förderung und Integration assistiver Technologien ein. Unser Ziel ist es, Barrieren abzubauen und allen Menschen, unabhängig von ihren Fähigkeiten, den Zugang zu Informationen und Dienstleitungen zu erleichtern.</p>
-           <p>Haben sie Fragen zu unseren Produkten oder Dienstleistungen? Möchten Sie mehr über assistive Technologien erfahren oder benötigen Sie Unterstützung bei der Implementierung?
-            Wir sind hier, um ihnen zu helfen! So erreichen Sie uns:
-           </p> 
-           <p>aal@aca.de</p>
-           <p>0151 555555</p>
-        
-           <p>Alternativ können Sie auch unser Kontaktformular nutzen. Füllen sie einfach die folgenden Felder aus, und wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen:</p>
-           <form action="#" method="POST">
-            <div class="mb-3">
-                <label for="email" class="form-label">E-Mail</label>
-                <input type="email" class="form-control" id="email" placeholder="Ihre E-Mail-Adresse">
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Nachricht</label>
-                <textarea class="form-control" id="message" rows="3" placeholder="Ihre Nachricht"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Absenden</button>
-        </form>
-
-    </section>
     
 
-    <!-- Bild-Abschnitt -->
-    <section class="py-5 bg-light">
-        <div class="container text-center">
-            <img src="https://via.placeholder.com/800x400" class="img-fluid rounded" alt="Projekt Bild">
+    <header class="header">
+        <h1>Assistive Technik</h1>
+        <p>Im Wohnen in der Eingliederungshilfe</p>
+    </header>
+
+    <section id="projekt" class="container mt-5">
+        <h2 class="section-heading">Assistive Technik</h2>
+        <p>„Mit diesem Modellprojekt setzen wir neue Maßstäbe in der Eingliederungshilfe und wollen zeigen, dass der gezielte Einsatz von Technik nicht nur die Teilhabe der Menschen stärkt, sondern auch den Personaleinsatz effizienter gestalten kann.“</p>
+        <p><strong>– Marco Schmitz, Stiftungsvorstandsvorsitzender der SozialstiftungNRW</strong></p>
+    </section>
+
+    <section id="technologien" class="container mt-5">
+        <h2 class="section-heading">Technologien</h2>
+        <p>Assistive Technologien sind entscheidend für ein selbstbestimmtes und erfülltes Leben von Menschen mit Assistenzbedarf. Hier stellen wir Ihnen einige der innovativsten Technologien vor, die im Rahmen unseres Projekts erprobt werden.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/300" class="img-fluid" alt="Technologie 1">
+                <button class="btn btn-primary mt-2">Mehr</button>
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/300" class="img-fluid" alt="Technologie 2">
+                <button class="btn btn-primary mt-2">Mehr</button>
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/300" class="img-fluid" alt="Technologie 3">
+                <button class="btn btn-primary mt-2">Mehr</button>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer text-center">
-        <div class="container">
-            <p>© 2024 WAT Projekt. Alle Rechte vorbehalten.</p>
-            <p><a href="#">Datenschutz</a> | <a href="#">Impressum</a></p>
-        </div>
+    <section id="faq" class="faq container mt-5">
+        <h3>FAQ</h3>
+        <p><strong>Was sind assistive Technologien?</strong> Assistive Technologien sind Geräte oder Systeme, die Menschen mit Assistenzbedarf helfen, ihre Selbstständigkeit zu erhöhen und ihre Lebensqualität zu verbessern.</p>
+        <p><strong>Wie helfen assistive Technologien im Alltag?</strong> Sie ermöglichen es, alltägliche Aufgaben wie Kochen, Reinigen oder Kommunikation zu erleichtern.</p>
+        <p><strong>Wer kann assistive Technologien beantragen?</strong> Menschen mit körperlichen oder geistigen Beeinträchtigungen können sie beantragen, wenn sie Unterstützung im Alltag benötigen.</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 WAT. Alle Rechte vorbehalten. | <a href="#impressum">Impressum</a> | <a href="#datenschutz">Datenschutz</a></p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
