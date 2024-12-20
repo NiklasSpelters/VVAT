@@ -28,6 +28,11 @@
     color: #007bff;
 }
 
+/* Für sanfte Übergänge beim Wechseln der Sections */
+.content-section {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
 .navbar .btn-outline-primary:hover {
     background-color: #007bff;
     color: white;
@@ -66,6 +71,38 @@
             background-color: var(--secondary-color);
             border-color: var(--secondary-color);
         }
+        #erfahrungen .testimonial img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 3px solid #40E0D0; /* Türkisfarbener Rand */
+        }
+        
+        #erfahrungen .testimonial blockquote {
+            font-size: 1rem; /* Kleinere Schriftgröße */
+            line-height: 1.5; /* Angemessener Zeilenabstand */
+            max-width: 600px; /* Maximale Breite des Textblocks */
+            margin: 0 auto; /* Zentrierung des Texts */
+            color: #333; /* Lesbare Textfarbe */
+        }
+        
+        #erfahrungen .carousel-inner {
+            padding: 0 40px; /* Abstand zum Rand des Karussells */
+        }
+        
+        #erfahrungen .carousel-control-prev,
+        #erfahrungen .carousel-control-next {
+            width: 5%; /* Weniger Platz für die Pfeile */
+        }
+        
+        #erfahrungen .carousel-control-prev-icon,
+        #erfahrungen .carousel-control-next-icon {
+            background-color: #40E0D0; /* Türkisfarbene Pfeile */
+            border-radius: 50%;
+            padding: 10px; /* Größe der Pfeile */
+        }
+        
+        
 
         .footer {
             background-color: var(--secondary-color);
