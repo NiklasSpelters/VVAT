@@ -120,7 +120,7 @@
         }
 
         .faq {
-            background-color: var(--primary-color);
+            background-color: var(--secondary-color);
             color: var(--white);
             padding: 40px;
             border-radius: 10px;
@@ -131,5 +131,20 @@
         }
 
         .faq p {
+            color: var(--light-color);
+        }
+
+        .standorte{
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+        }
+        
+        .standorte h3{
+            color: var(--white);
+        }
+
+        .standorte p {
             color: var(--light-color);
         }
