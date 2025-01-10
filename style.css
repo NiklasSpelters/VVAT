@@ -1,150 +1,221 @@
  /* Farbgebung aus den Screenshots */
-      :root {
-            --primary-color: #007B7F; /* Hauptfarbe Türkis */
-            --secondary-color: #002A2B; /* Dunkles Blau */
-            --light-color: #E6FFFF; /* Helles Türkis */
-            --white: #FFFFFF;
-        }
+ :root {
+     --primary-color: #007B7F;
+     /* Hauptfarbe Türkis */
+     --secondary-color: #001652;
+     /* Dunkles Blau */
+     --light-color: #E6FFFF;
+     /* Helles Türkis */
+     --white: #FFFFFF;
+ }
 
-        body {
-            font-family: Arial, sans-serif;
-        }
+ body {
+     font-family: Arial, sans-serif;
+ }
 
-        .navbar {
-            background-color: var(--primary-color);
-        }
+ .navbar {
+     background-color: var(--primary-color);
+ }
 
-        .navbar .nav-link {
-            color: var(--white) !important;
-        }
+ .navbar .nav-link {
+     color: var(--white) !important;
+ }
 
-        .navbar .nav-link:hover {
-            color: var(--light-color) !important;
-        }
-        /* Navbar-Button für Login */
-.navbar .btn-outline-primary {
-    margin-left: auto;
-    border-color: #007bff;
-    color: #007bff;
+ .navbar .nav-link:hover {
+     color: var(--light-color) !important;
+ }
+
+ /* Navbar-Button für Login */
+ .navbar .btn-outline-primary {
+     margin-left: auto;
+     border-color: #007bff;
+     color: #007bff;
+ }
+
+ /* Für sanfte Übergänge beim Wechseln der Sections */
+ .content-section {
+     transition: opacity 0.3s ease, visibility 0.3s ease;
+ }
+
+ .navbar .btn-outline-primary:hover {
+     background-color: #007bff;
+     color: white;
+ }
+
+ .header {
+     background-color: var(--secondary-color);
+     color: var(--white);
+     text-align: center;
+     padding: 100px 20px;
+ }
+
+ .header h1 {
+     font-size: 3rem;
+     font-weight: bold;
+ }
+
+ .header p {
+     font-size: 1.2rem;
+ }
+
+ .section-heading {
+     font-size: 2rem;
+     color: var(--secondary-color);
+     margin-bottom: 20px;
+     text-transform: uppercase;
+     font-weight: bold;
+ }
+
+ .section-heading2 {
+    color: #001652;
+    font-weight: bold;
+    margin-bottom: 20px;
+ }
+
+ .btn-primary {
+     background-color: var(--primary-color);
+     border-color: var(--primary-color);
+ }
+
+ .btn-primary:hover {
+     background-color: var(--secondary-color);
+     border-color: var(--secondary-color);
+ }
+
+ #erfahrungen .testimonial img {
+     width: 100px;
+     height: 100px;
+     object-fit: cover;
+     border: 3px solid #40E0D0;
+     /* Türkisfarbener Rand */
+ }
+
+ #erfahrungen .testimonial blockquote {
+     font-size: 1rem;
+     /* Kleinere Schriftgröße */
+     line-height: 1.5;
+     /* Angemessener Zeilenabstand */
+     max-width: 600px;
+     /* Maximale Breite des Textblocks */
+     margin: 0 auto;
+     /* Zentrierung des Texts */
+     color: #333;
+     /* Lesbare Textfarbe */
+ }
+
+ #erfahrungen .carousel-inner {
+     padding: 0 40px;
+     /* Abstand zum Rand des Karussells */
+ }
+
+ #erfahrungen .carousel-control-prev,
+ #erfahrungen .carousel-control-next {
+     width: 5%;
+     /* Weniger Platz für die Pfeile */
+ }
+
+ #erfahrungen .carousel-control-prev-icon,
+ #erfahrungen .carousel-control-next-icon {
+     background-color: #40E0D0;
+     /* Türkisfarbene Pfeile */
+     border-radius: 50%;
+     padding: 10px;
+     /* Größe der Pfeile */
+ }
+
+ .container {
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 15px;
+     /* Abstand links für mobile Geräte */
+     padding-right: 15px;
+     /* Abstand rechts für mobile Geräte */
+ }
+
+
+#technologien{
+    background-color: #001652; 
+    padding: 40px; 
+    border-radius: 10px;
 }
 
-/* Für sanfte Übergänge beim Wechseln der Sections */
-.content-section {
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+#technologien p{
+    color: var(--white);
 }
 
-.navbar .btn-outline-primary:hover {
-    background-color: #007bff;
+#technologien h2{
+    color: var(--white);
+}
+
+ .footer {
+     background-color: var(--secondary-color);
+     color: var(--white);
+     text-align: center;
+     padding: 20px 0;
+ }
+
+ .footer a {
+     color: var(--light-color);
+ }
+
+ .footer a:hover {
+     color: var(--primary-color);
+ }
+
+ .faq {
+     background-color: var(--secondary-color);
+     color: var(--white);
+     padding: 40px;
+     border-radius: 10px;
+ }
+
+
+
+.faq h3 {
+    color: var(--white);
+}
+
+.faq p {
+    color: var(--light-color);
+}
+
+ .standorte {
+     background-color: var(--secondary-color);
+     color: var(--white);
+     padding: 40px;
+     border-radius: 10px;
+ }
+
+ .standorte h3 {
+     color: var(--white);
+ }
+
+ .standorte p {
+     color: var(--light-color);
+ }
+
+ #formularKontakt {
+     background-color: #001652;
+     padding: 20px;
+     border-radius: 10px;
+     max-width: 500px;
+     margin: 20px auto;
+     color: white;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     width: calc(100% - 40px);
+     /* Abstand von 20px auf jeder Seite */
+
+ }
+
+ #loginFormular {
+    background-color: #001652;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
     color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(100% - 40px);
+    /* Abstand von 20px auf jeder Seite */
+
 }
-
-        .header {
-            background-color: var(--secondary-color);
-            color: var(--white);
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        .header h1 {
-            font-size: 3rem;
-            font-weight: bold;
-        }
-
-        .header p {
-            font-size: 1.2rem;
-        }
-
-        .section-heading {
-            font-size: 2rem;
-            color: var(--secondary-color);
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        .btn-primary {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-        }
-
-        .btn-primary:hover {
-            background-color: var(--secondary-color);
-            border-color: var(--secondary-color);
-        }
-        #erfahrungen .testimonial img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border: 3px solid #40E0D0; /* Türkisfarbener Rand */
-        }
-        
-        #erfahrungen .testimonial blockquote {
-            font-size: 1rem; /* Kleinere Schriftgröße */
-            line-height: 1.5; /* Angemessener Zeilenabstand */
-            max-width: 600px; /* Maximale Breite des Textblocks */
-            margin: 0 auto; /* Zentrierung des Texts */
-            color: #333; /* Lesbare Textfarbe */
-        }
-        
-        #erfahrungen .carousel-inner {
-            padding: 0 40px; /* Abstand zum Rand des Karussells */
-        }
-        
-        #erfahrungen .carousel-control-prev,
-        #erfahrungen .carousel-control-next {
-            width: 5%; /* Weniger Platz für die Pfeile */
-        }
-        
-        #erfahrungen .carousel-control-prev-icon,
-        #erfahrungen .carousel-control-next-icon {
-            background-color: #40E0D0; /* Türkisfarbene Pfeile */
-            border-radius: 50%;
-            padding: 10px; /* Größe der Pfeile */
-        }
-        
-        
-
-        .footer {
-            background-color: var(--secondary-color);
-            color: var(--white);
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .footer a {
-            color: var(--light-color);
-        }
-
-        .footer a:hover {
-            color: var(--primary-color);
-        }
-
-        .faq {
-            background-color: var(--secondary-color);
-            color: var(--white);
-            padding: 40px;
-            border-radius: 10px;
-        }
-
-        .faq h3 {
-            color: var(--white);
-        }
-
-        .faq p {
-            color: var(--light-color);
-        }
-
-        .standorte{
-            background-color: var(--secondary-color);
-            color: var(--white);
-            padding: 40px;
-            border-radius: 10px;
-        }
-        
-        .standorte h3{
-            color: var(--white);
-        }
-
-        .standorte p {
-            color: var(--light-color);
-        }

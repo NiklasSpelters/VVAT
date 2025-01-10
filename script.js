@@ -27,4 +27,4 @@ navLinks.forEach((link) => {
 });
 
 // Zeige standardmäßig die erste Section
-showSection('home');
+showSection('start');
