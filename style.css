@@ -9,6 +9,28 @@
      --white: #FFFFFF;
  }
 
+ section {
+    display: none; /* Alle Sections standardmäßig ausblenden */
+}
+
+section.active {
+    display: block; /* Nur die aktive Section sichtbar machen */
+}
+
+/* Sicherstellen, dass untergeordnete Sections innerhalb von #start ebenfalls sichtbar sind, wenn #start aktiv ist */
+#start.active section {
+    display: block; /* Alle Untersections in der Start-Section sichtbar machen */
+}
+
+  
+#start{
+    padding: 10px;
+}
+
+#login.active section{
+    display: block;
+}
+
  body {
      font-family: Arial, sans-serif;
  }
@@ -43,20 +65,48 @@
  }
 
  .header {
-     background-color: var(--secondary-color);
-     color: var(--white);
-     text-align: center;
-     padding: 100px 20px;
- }
+    position: relative;
+    background-image: url('hintergrund.jpg'); /* Ersetze dies mit dem Pfad zu deinem Hintergrundbild */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 20px; /* Abstand im Header (anpassbar) */
+    text-align: center;
+}
 
- .header h1 {
-     font-size: 3rem;
-     font-weight: bold;
- }
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparente schwarze Überlagerung */
+    z-index: 0;
+}
 
- .header p {
-     font-size: 1.2rem;
- }
+.header-box {
+    position: relative;
+    background-color: rgba(0, 22, 82, 0.8); /* Durchsichtiger Hintergrund mit #001652 und Transparenz */
+    padding: 30px;
+    max-width: 80%; /* Setzt eine maximale Breite für den Kasten */
+    margin: 0 auto; /* Zentriert den Kasten */
+    z-index: 1; /* Stellt sicher, dass der Kasten über dem Bild liegt */
+    border-radius: 15px;
+}
+
+.header-box h1 {
+    margin: 0;
+    font-size: 3em; /* Größe der Überschrift */
+}
+
+.header-box p {
+    margin-top: 10px;
+    font-size: 1.2em; /* Größe des Textes */
+}
+
+
+
 
  .section-heading {
      font-size: 2rem;
@@ -147,20 +197,28 @@
     color: var(--white);
 }
 
- .footer {
-     background-color: var(--secondary-color);
-     color: var(--white);
-     text-align: center;
-     padding: 20px 0;
- }
+footer .navbar-brand img {
+    max-width: 100%;
+    height: auto;
+}
 
- .footer a {
-     color: var(--light-color);
- }
+footer a {
+    text-decoration: none;
+}
 
- .footer a:hover {
-     color: var(--primary-color);
- }
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+footer .img-fluid {
+    max-width: 30px;
+    height: auto;
+}
+
 
  .faq {
      background-color: var(--secondary-color);
@@ -207,6 +265,10 @@
 
  }
 
+ #kontakt.active section {
+    display: block; /* Alle Untersections in der Start-Section sichtbar machen */
+}
+
  #loginFormular {
     background-color: #001652;
     padding: 20px;
@@ -219,3 +281,21 @@
     /* Abstand von 20px auf jeder Seite */
 
 }
+
+#loginLink {
+    background-color: transparent; /* Kein Hintergrund */
+    color: white; /* Weiße Schrift */
+    border: none; /* Keine Umrandung */
+    font-size: 1rem; /* Schriftgröße anpassen (optional) */
+    padding: 10px 20px; /* Polsterung anpassen (optional) */
+    text-decoration: none; /* Entfernt den Standard-Unterstrich von Links */
+    display: inline-block; /* Macht den Link wie einen Button */
+    cursor: pointer; /* Zeigt einen Zeiger an, wenn der Link hover ist */
+    text-align: center; /* Zentriert den Text */
+}
+
+#loginLink:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Leicht transparenter Hintergrund bei Hover */
+    color: white; /* Schriftfarbe bleibt weiß */
+}
+

@@ -1,30 +1,33 @@
-// Wählt alle Navigationslinks und den dynamischen Content-Bereich aus
-const navLinks = document.querySelectorAll('.section-link');
-const sections = document.querySelectorAll('.content-section');
-
-// Funktion zum Anzeigen der entsprechenden Section
-function showSection(sectionId) {
-    sections.forEach((section) => {
-        if (section.id === sectionId) {
-            section.style.display = 'block';
-            section.style.opacity = '1';
-            section.style.visibility = 'visible';
-        } else {
-            section.style.display = 'none';
-            section.style.opacity = '0';
-            section.style.visibility = 'hidden';
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll("[data-target]");
+    const allSections = document.querySelectorAll("section");
+  
+    // Standardmäßig die "start"-Section aktivieren
+    const defaultSectionId = "start"; 
+    const defaultSection = document.getElementById(defaultSectionId);
+    
+    if (defaultSection) {
+      defaultSection.classList.add("active"); // Start-Section aktivieren
+    }
+  
+    // Event-Listener für Navigation
+    navLinks.forEach(link => {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        const targetId = this.getAttribute("data-target");
+  
+        if (targetId) {
+          // Alle Sections deaktivieren
+          allSections.forEach(section => {
+            section.classList.remove("active");
+          });
+  
+          // Zielsection aktivieren
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            targetSection.classList.add("active"); // Zielsection aktivieren
+          }
         }
+      });
     });
-}
-
-// Event-Listener für alle Links in der Navigation
-navLinks.forEach((link) => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault(); // Verhindert den Seitenreload
-        const targetSection = link.getAttribute('data-section'); // Holen des Section-IDs
-        showSection(targetSection); // Zeigt die gewünschte Section
-    });
-});
-
-// Zeige standardmäßig die erste Section
-showSection('start');
+  });

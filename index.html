@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">VVAT</a>
+            <a class="navbar-brand" href="#" data-target="start">VVAT</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,131 +27,135 @@
                             Projekt
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="projektDropdown">
-                            <li><a class="dropdown-item" href="#verbundvorhaben">Verbundvorhaben</a></li>
-                            <li><a class="dropdown-item" href="#lenkungsgruppe">Lenkungsgruppe</a></li>
-                            <li><a class="dropdown-item" href="#projektkoordination">Projektkoordination</a></li>
-                            <li><a class="dropdown-item" href="#projektstandorte">Projektstandorte</a></li>
-                            <li><a class="dropdown-item" href="#wissenschaftliche Begleitung">Wissenschaftliche
-                                    Begleitung</a></li>
+                            <li><a class="dropdown-item" href="#" data-target="wir">Verbundvorhaben</a></li>
+                            <li><a class="dropdown-item" href="#" data-target="">Lenkungsgruppe</a></li>
+                            <li><a class="dropdown-item" href="#">Projektkoordination</a></li>
+                            <li><a class="dropdown-item" href="#" data-target="standorte">Projektstandorte</a></li>
+                            <li><a class="dropdown-item" href="#">Wissenschaftliche Begleitung</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#kontakt">Kontakt</a></li>
+                            <li><a class="dropdown-item" href="#" data-target="kontakt">Kontakt</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#technologien">Technologien</a>
+                        <a class="nav-link" href="#" data-target="Technologien2">Technologien</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                        <a class="nav-link" href="#" data-target="kontakt">Kontakt</a>
                     </li>
                 </ul>
                 <!-- Login-Button rechts -->
-                <button class="btn btn-outline-primary" type="button">Login</button>
+                <a id="loginLink" class="btn" href="#" role="button" data-target="login">Login</a>
             </div>
         </div>
     </nav>
 
 
     <header class="header">
-        <h1>Assistive Technik</h1>
-        <p>Im Wohnen in der Eingliederungshilfe</p>
+        <div class="header-box">
+            <h1>Assistive Technik</h1>
+            <p>Im Wohnen in der Eingliederungshilfe</p>
+        </div>
     </header>
+    
+    <section id="start" class="active">
+        <section id="projekt" class="container mt-5">
+            <h2 class="section-heading">Assistive Technik</h2>
+            <p>„Mit diesem Modellprojekt setzen wir neue Maßstäbe in der Eingliederungshilfe und wollen zeigen, dass der
+                gezielte Einsatz von Technik nicht nur die Teilhabe der Menschen stärkt, sondern auch den
+                Personaleinsatz
+                effizienter gestalten kann.“</p>
+            <p><strong>– Marco Schmitz, Stiftungsvorstandsvorsitzender der Sozialstiftung NRW</strong></p>
+        </section>
 
-    <section id="start">
-    <section id="projekt" class="container mt-5">
-        <h2 class="section-heading">Assistive Technik</h2>
-        <p>„Mit diesem Modellprojekt setzen wir neue Maßstäbe in der Eingliederungshilfe und wollen zeigen, dass der
-            gezielte Einsatz von Technik nicht nur die Teilhabe der Menschen stärkt, sondern auch den Personaleinsatz
-            effizienter gestalten kann.“</p>
-        <p><strong>– Marco Schmitz, Stiftungsvorstandsvorsitzender der Sozialstiftung NRW</strong></p>
-    </section>
-
-    <section id="technologien" class="technologien container mt-5">
-        <h2 class="section-heading">Technologien</h2>
-        <p>Assistive Technologien sind entscheidend für ein selbstbestimmtes und erfülltes Leben von Menschen mit
-            Assistenzbedarf. Hier stellen wir Ihnen einige der innovativsten Technologien vor, die im Rahmen unseres
-            Projekts erprobt werden.</p>
-        <div class="row">
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 1">
-                <button class="btn btn-primary">Mehr</button>
-            </div>
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 2">
-                <button class="btn btn-primary">Mehr</button>
-            </div>
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 3">
-                <button class="btn btn-primary">Mehr</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="erfahrungen" class="container text-center my-5">
-        <h2 class="section-heading">ERFAHRUNGEN</h2>
-        <div id="erfahrungenCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- Erfahrungsbericht 1 -->
-                <div class="carousel-item active">
-                    <div class="testimonial">
-                        <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Max Mustermann">
-                        <blockquote class="blockquote">
-                            <p class="mb-3">„Die Einführung assistiver Technologien hat unsere Arbeit revolutioniert.
-                                Sie ermöglichen es uns, individueller auf die Bedürfnisse unserer Klient:innen
-                                einzugehen und gleichzeitig den Pflegeaufwand zu reduzieren. Es ist inspirierend zu
-                                erleben, wie Technik und Menschlichkeit Hand in Hand gehen.“</p>
-                        </blockquote>
-                        <footer class="blockquote-footer">
-                            MAX MUSTERMANN <br>
-                            <cite title="Pflegefachkraft">PFLEGEFACHKRAFT</cite>
-                        </footer>
-                    </div>
+        <section id="technologien" class="technologien container mt-5">
+            <h2 class="section-heading">Technologien</h2>
+            <p>Assistive Technologien sind entscheidend für ein selbstbestimmtes und erfülltes Leben von Menschen mit
+                Assistenzbedarf. Hier stellen wir Ihnen einige der innovativsten Technologien vor, die im Rahmen unseres
+                Projekts erprobt werden.</p>
+            <div class="row">
+                <div class="col-md-4 d-flex flex-column align-items-center">
+                    <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 1">
+                    <button class="btn btn-primary">Mehr</button>
                 </div>
-                <!-- Erfahrungsbericht 2 -->
-                <div class="carousel-item">
-                    <div class="testimonial">
-                        <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Anna Beispiel">
-                        <blockquote class="blockquote">
-                            <p class="mb-3">„Dank assistiver Technologien können wir unseren Alltag effizienter
-                                gestalten und unseren Klienten gleichzeitig mehr Selbstständigkeit ermöglichen. Eine
-                                beeindruckende Entwicklung!“</p>
-                        </blockquote>
-                        <footer class="blockquote-footer">
-                            ANNA BEISPIEL <br>
-                            <cite title="Ergotherapeutin">ERGOTHERAPEUTIN</cite>
-                        </footer>
-                    </div>
+                <div class="col-md-4 d-flex flex-column align-items-center">
+                    <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 2">
+                    <button class="btn btn-primary">Mehr</button>
+                </div>
+                <div class="col-md-4 d-flex flex-column align-items-center">
+                    <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 3">
+                    <button class="btn btn-primary">Mehr</button>
                 </div>
             </div>
-            <!-- Steuerung für das Karussell -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#erfahrungenCarousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Vorherige</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#erfahrungenCarousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Nächste</span>
-            </button>
-        </div>
+        </section>
+
+        <section id="erfahrungen" class="container text-center my-5">
+            <h2 class="section-heading">ERFAHRUNGEN</h2>
+            <div id="erfahrungenCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Erfahrungsbericht 1 -->
+                    <div class="carousel-item active">
+                        <div class="testimonial">
+                            <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Max Mustermann">
+                            <blockquote class="blockquote">
+                                <p class="mb-3">„Die Einführung assistiver Technologien hat unsere Arbeit
+                                    revolutioniert.
+                                    Sie ermöglichen es uns, individueller auf die Bedürfnisse unserer Klient:innen
+                                    einzugehen und gleichzeitig den Pflegeaufwand zu reduzieren. Es ist inspirierend zu
+                                    erleben, wie Technik und Menschlichkeit Hand in Hand gehen.“</p>
+                            </blockquote>
+                            <footer class="blockquote-footer">
+                                MAX MUSTERMANN <br>
+                                <cite title="Pflegefachkraft">PFLEGEFACHKRAFT</cite>
+                            </footer>
+                        </div>
+                    </div>
+                    <!-- Erfahrungsbericht 2 -->
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Anna Beispiel">
+                            <blockquote class="blockquote">
+                                <p class="mb-3">„Dank assistiver Technologien können wir unseren Alltag effizienter
+                                    gestalten und unseren Klienten gleichzeitig mehr Selbstständigkeit ermöglichen. Eine
+                                    beeindruckende Entwicklung!“</p>
+                            </blockquote>
+                            <footer class="blockquote-footer">
+                                ANNA BEISPIEL <br>
+                                <cite title="Ergotherapeutin">ERGOTHERAPEUTIN</cite>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <!-- Steuerung für das Karussell -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#erfahrungenCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Vorherige</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#erfahrungenCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Nächste</span>
+                </button>
+            </div>
+        </section>
+
+
+
+        <section id="faq" class="faq container mt-5">
+            <h3>FAQ</h3>
+            <p><strong>Was sind assistive Technologien?</strong> Assistive Technologien sind Geräte oder Systeme, die
+                Menschen mit Assistenzbedarf helfen, ihre Selbstständigkeit zu erhöhen und ihre Lebensqualität zu
+                verbessern.</p>
+            <p><strong>Wie helfen assistive Technologien im Alltag?</strong> Sie ermöglichen es, alltägliche Aufgaben
+                wie
+                Kochen, Reinigen oder Kommunikation zu erleichtern.</p>
+            <p><strong>Wer kann assistive Technologien beantragen?</strong> Menschen mit körperlichen oder geistigen
+                Beeinträchtigungen können sie beantragen, wenn sie Unterstützung im Alltag benötigen.</p>
+        </section>
+
     </section>
-
-
-
-    <section id="faq" class="faq container mt-5">
-        <h3>FAQ</h3>
-        <p><strong>Was sind assistive Technologien?</strong> Assistive Technologien sind Geräte oder Systeme, die
-            Menschen mit Assistenzbedarf helfen, ihre Selbstständigkeit zu erhöhen und ihre Lebensqualität zu
-            verbessern.</p>
-        <p><strong>Wie helfen assistive Technologien im Alltag?</strong> Sie ermöglichen es, alltägliche Aufgaben wie
-            Kochen, Reinigen oder Kommunikation zu erleichtern.</p>
-        <p><strong>Wer kann assistive Technologien beantragen?</strong> Menschen mit körperlichen oder geistigen
-            Beeinträchtigungen können sie beantragen, wenn sie Unterstützung im Alltag benötigen.</p>
-    </section>
-
-</section>
 
     <section id="wir" class="wir container mt-5">
         <h3 class="section-heading">DAS SIND WIR</h3>
@@ -363,9 +367,6 @@
                 </div>
             </form>
         </section>
-
-
-
     </section>
 
     <section id="login" class="login container mt-5">
@@ -416,10 +417,54 @@
         </section>
     </section>
 
-    <footer class="footer">
-        <p>&copy; 2024 WAT. Alle Rechte vorbehalten. | <a href="#impressum">Impressum</a> | <a
-                href="#datenschutz">Datenschutz</a></p>
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Linkes Container für Logo -->
+                <div class="col-md-3">
+                    <a href="#" class="navbar-brand">
+                        <img src="https://via.placeholder.com/150x50" alt="Logo" class="img-fluid">
+                    </a>
+                </div>
+    
+                <!-- Mittleres Container für Links -->
+                <div class="col-md-6">
+                    <div class="row">
+                        <!-- Links Spalte 1 -->
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white" data-target="wir">Über uns</a></li>
+                                <li><a href="#" class="text-white" data-target="Technologien2">Technologien</a></li>
+                                <li><a href="#" class="text-white" data-target="kontakt">Kontakt</a></li>
+                            </ul>
+                        </div>
+                        <!-- Links Spalte 2 -->
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white">Impressum</a></li>
+                                <li><a href="#" class="text-white">Datenschutz</a></li>
+                                <li><a href="#" class="text-white" data-target="login">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Rechtes Container für Social Media Links -->
+                <div class="col-md-3 d-flex justify-content-around align-items-center">
+                    <a href="https://twitter.com" target="_blank" class="text-white">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/X_Logo_2023.svg" alt="X" class="img-fluid mb-2" style="width: 30px;">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="text-white">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="img-fluid mb-2" style="width: 30px;">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="text-white">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="img-fluid mb-2" style="width: 30px;">
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
