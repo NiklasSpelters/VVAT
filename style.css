@@ -27,6 +27,7 @@ section.active {
     padding: 10px;
 }
 
+
 #login.active section{
     display: block;
 }
@@ -197,6 +198,7 @@ section.active {
     color: var(--white);
 }
 
+
 footer .navbar-brand img {
     max-width: 100%;
     height: auto;
@@ -237,11 +239,14 @@ footer .img-fluid {
     color: var(--light-color);
 }
 
+
+
  .standorte {
      background-color: var(--secondary-color);
      color: var(--white);
      padding: 40px;
      border-radius: 10px;
+     margin-bottom: 20px;
  }
 
  .standorte h3 {
@@ -250,6 +255,10 @@ footer .img-fluid {
 
  .standorte p {
      color: var(--light-color);
+ }
+
+ .standorte button{
+    margin: 10px;
  }
 
  #formularKontakt {
