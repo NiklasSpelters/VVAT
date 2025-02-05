@@ -13,7 +13,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#" data-target="start">VVAT</a>
+            <a class="navbar-brand" href="#" data-target="start"><img src="Logo - VvAT - ohne Text - 2.png" alt=""
+                    style="height: 30px; width: 30px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,18 +29,22 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="projektDropdown">
                             <li><a class="dropdown-item" href="#" data-target="wir">Verbundvorhaben</a></li>
-                            <li><a class="dropdown-item" href="#" data-target="">Lenkungsgruppe</a></li>
-                            <li><a class="dropdown-item" href="#">Projektkoordination</a></li>
+                            <li><a class="dropdown-item" href="#" data-target="lenkungsgruppe">Lenkungsgruppe</a></li>
+                            <li><a class="dropdown-item" href="#"
+                                    data-target="projektkoordination">Projektkoordination</a></li>
                             <li><a class="dropdown-item" href="#" data-target="standorte">Projektstandorte</a></li>
-                            <li><a class="dropdown-item" href="#">Wissenschaftliche Begleitung</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#" data-target="kontakt">Kontakt</a></li>
+                            <li><a class="dropdown-item" href="#" data-target="wissenschaftliche">Wissenschaftliche
+                                    Begleitung</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-target="Technologien2">Technologien</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#" data-target="teilhabe">Teilhabe</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#" data-target="ethik">Ethik</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-target="kontakt">Kontakt</a>
@@ -54,11 +59,18 @@
 
     <header class="header">
         <div class="header-box">
-            <h1>Assistive Technik</h1>
-            <p>Im Wohnen in der Eingliederungshilfe</p>
+            <img src="Logo - VvAT - 6.png" alt="Linkes Bild" class="left-image">
+            <div class="text-content">
+                <p>Verbundvorhaben</p>
+                <h1>Assistive Technik</h1>
+                <p>im Wohnen in der Eingliederungshilfe</p>
+            </div>
+            <img src="rechtes-bild.jpg" alt="Rechtes Bild" class="right-image">
         </div>
     </header>
-    
+
+
+
     <section id="start" class="active">
         <section id="projekt" class="container mt-5">
             <h2 class="section-heading">Assistive Technik</h2>
@@ -71,257 +83,389 @@
 
         <section id="technologien" class="technologien container mt-5">
             <h2 class="section-heading">Technologien</h2>
-            <p>Assistive Technologien sind entscheidend für ein selbstbestimmtes und erfülltes Leben von Menschen mit
-                Assistenzbedarf. Hier stellen wir Ihnen einige der innovativsten Technologien vor, die im Rahmen unseres
-                Projekts erprobt werden.</p>
-            <div class="row">
+            <p><i>Welche Auswirkungen hat der Einsatz assistiver Technologien auf die Teilhabewirksamkeit, sowie auf die
+                    Personal- und Prozesseffizienz?</i></p>
+            <div class="technologie-item d-flex flex-column-reverse flex-md-row align-items-center mb-4">
                 <div class="col-md-4 d-flex flex-column align-items-center">
                     <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 1">
-                    <button class="btn btn-primary">Mehr</button>
                 </div>
-                <div class="col-md-4 d-flex flex-column align-items-center">
-                    <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 2">
-                    <button class="btn btn-primary">Mehr</button>
-                </div>
-                <div class="col-md-4 d-flex flex-column align-items-center">
-                    <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 3">
-                    <button class="btn btn-primary">Mehr</button>
+                <div>
+                    <p>Mit dieser Frage beschäftigen sich im Rahmen des wissenschaftlich begleiteten Verbundvorhabens
+                        „Assistive Technik im Wohnen in der Eingliederungshilfe“ zehn Leistungserbringer der
+                        Eingliederungshilfe an zehn unterschiedlichen Standorten in Nordrhein-Westfalen.</p>
+                    <p>Wesentliches Interesse liegt auf möglichen Wechselwirkungen zwischen den drei Dimensionen
+                        Teilhabewirksamkeit, Personal- und Prozesseffizienz, die sich durch den Einsatz assistiver
+                        Technik bedingen.</p>
+
                 </div>
             </div>
         </section>
-
-        <section id="erfahrungen" class="container text-center my-5">
-            <h2 class="section-heading">ERFAHRUNGEN</h2>
-            <div id="erfahrungenCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Erfahrungsbericht 1 -->
-                    <div class="carousel-item active">
-                        <div class="testimonial">
-                            <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Max Mustermann">
-                            <blockquote class="blockquote">
-                                <p class="mb-3">„Die Einführung assistiver Technologien hat unsere Arbeit
-                                    revolutioniert.
-                                    Sie ermöglichen es uns, individueller auf die Bedürfnisse unserer Klient:innen
-                                    einzugehen und gleichzeitig den Pflegeaufwand zu reduzieren. Es ist inspirierend zu
-                                    erleben, wie Technik und Menschlichkeit Hand in Hand gehen.“</p>
-                            </blockquote>
-                            <footer class="blockquote-footer">
-                                MAX MUSTERMANN <br>
-                                <cite title="Pflegefachkraft">PFLEGEFACHKRAFT</cite>
-                            </footer>
-                        </div>
-                    </div>
-                    <!-- Erfahrungsbericht 2 -->
-                    <div class="carousel-item">
-                        <div class="testimonial">
-                            <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Anna Beispiel">
-                            <blockquote class="blockquote">
-                                <p class="mb-3">„Dank assistiver Technologien können wir unseren Alltag effizienter
-                                    gestalten und unseren Klienten gleichzeitig mehr Selbstständigkeit ermöglichen. Eine
-                                    beeindruckende Entwicklung!“</p>
-                            </blockquote>
-                            <footer class="blockquote-footer">
-                                ANNA BEISPIEL <br>
-                                <cite title="Ergotherapeutin">ERGOTHERAPEUTIN</cite>
-                            </footer>
-                        </div>
-                    </div>
-                </div>
-                <!-- Steuerung für das Karussell -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#erfahrungenCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Vorherige</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#erfahrungenCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Nächste</span>
-                </button>
-            </div>
-        </section>
-
-
-
-        <section id="faq" class="faq container mt-5">
-            <h3>FAQ</h3>
-            <p><strong>Was sind assistive Technologien?</strong> Assistive Technologien sind Geräte oder Systeme, die
-                Menschen mit Assistenzbedarf helfen, ihre Selbstständigkeit zu erhöhen und ihre Lebensqualität zu
-                verbessern.</p>
-            <p><strong>Wie helfen assistive Technologien im Alltag?</strong> Sie ermöglichen es, alltägliche Aufgaben
-                wie
-                Kochen, Reinigen oder Kommunikation zu erleichtern.</p>
-            <p><strong>Wer kann assistive Technologien beantragen?</strong> Menschen mit körperlichen oder geistigen
-                Beeinträchtigungen können sie beantragen, wenn sie Unterstützung im Alltag benötigen.</p>
-        </section>
-
     </section>
 
     <section id="wir" class="wir container mt-5">
         <h3 class="section-heading">DAS SIND WIR</h3>
-        <p>
-            Das Sozialwerk St. Georg e.V. ist ein innovatives und engagiertes Dienstleistungsunternehmen mit Sitz in
-            Gelsenkirchen, das sich seit 1952 für Menschen mit Assistenzbedarf einsetzt.
-            Unser Ziel ist es, durch den Einsatz von assistiven Technologien und maßgescheneiderten Lösungen mehr
-            Selbstbestimmung und Lebensqualität für unsere Klienten zu ermöglichen.
-            Wolfgang Meyer, Vorstand des Sozailwerks, hebt die Bedeutung unseres aktuellen Projekts hervor: "Wir freuen
-            uns sehr über den Start des Verbundvorhabens ,Assistive Technik im Wohnen in der Eingliederungshilfe'.
-            In den letzten Jahren haben wir erfolgreich assistive Technologien in der Pflege und für Menschen mit
-            demenziellen Beeinträchtigungen eingesetzt. Jetzt erweitern wir unsere Bemühungen, um gemeinsam mit weiteren
-            Leistungserbringern und Hochschulen diese Technologien in der Eingliederungshilfe weiterzuentwicklen und zu
-            erproben.
-            Die ist ein echtes Leuchtturmprojekt, um die Teilhabechancen für Menschen mit Assistenzbedarf zu erhöhen und
-            gleichzeitig unsere Arbeitsprozesse zu optimieren."
+        <p>Das Verbundvorhaben Assistive Technik im Wohnen in der Eingliederungshilfe wird gefördert durch die
+            Sozialstiftung NRW.</p>
+        <p>Zehn Projektstandorte in NRW erproben und entwickeln gemeinsam den zielführenden Einsatz assistiver
+            Technologien zur Verbesserung der Selbstbestimmung, Selbstständigkeit und Teilhabe von Menschen mit
+            Assistenzbedarf.</p>
+        <p>Das auf zwei Jahre angelegte Verbundvorhaben wird von zwei Hochschulen wissenschaftlich begleitet und ist
+            am 01.01.2025 gestartet.</p>
+        <p>Die personenzentrierte Leistungserbringung und die aktuelle Umstellung im Rahmen des
+            Bundesteilhabegesetztes (BTHG) korreliert mit dem zunehmenden Fach- und Arbeitskräftemangel sowie
+            steigenden Verwaltungs- und Organisationsaufwänden und stellt Leistungserbringer wie Leistungsträger in
+            der Eingliederungshilfe vor enorme Herausforderungen.</p>
+        <p>Enorme Herausforderungen erfordern innovative Lösungen!</p>
+        <p>Wesentliches Interesse liegt auf möglichen Wechselwirkungen zwischen den drei Dimensionen
+            Teilhabewirksamkeit, Personal- und Prozesseffizienz, die sich durch den Einsatz assistiver Technik
+            bedingen.</p>
+        <p>Am Ende der zweijährigen Projektlaufzeit werden auf Basis der Projektergebnisse und daraus abgeleiteten
+            Handlungsempfehlungen die Implikationen für eine regelhafte Refinanzierung assistiver Technologien
+            beraten und diskutiert.</p>
+        <p>Für das Verbundvorhaben ergeben sich vor diesem Hintergrund drei übergeordnete Ziele und drei
+            unterschiedliche Zielgruppen:</p>
+        <p><strong>Ziele:</strong></p>
+        <ol>
+            <li>Bedarfsgerechte Erprobung, Einsatz und ggf. Entwicklung assistiver Technologien an den teilnehmenden
+                Projektstandorten</li>
+            <li>Messung der Auswirkungen des Einsatzes assistiver Technologien auf die Teilhabewirksamkeit, die
+                Personal- sowie Prozesseffizienz</li>
+            <li>Erkenntnisgewinn als Argumentationsgrundlage zur bedarfsgerechten regelhaften Refinanzierung
+                assistiver Technologien</li>
+        </ol>
+        <p><strong>Zielgruppen:</strong></p>
+        <ol>
+            <li>Die primäre Zielgruppe umfasst erwachsene Leistungsberechtigte in der Eingliederungshilfe im Kontext
+                Wohnen. Die Zielgruppen für technische Assistenzlösungen sind dabei vielfältig. Sie kommen bei
+                Menschen mit sensorischen, physischen, psychischen und kognitiven Beeinträchtigungen sowie zur
+                Unterstützung bei chronischen Erkrankungen zum Einsatz.</li>
+            <li>Die sekundäre Zielgruppe umfasst Leistungserbringer der Eingliederungshilfe mit besonderem Fokus auf
+                die Mitarbeitenden sowie die Organisationsprozesse. Durch den Einsatz assistiver Technologien sollen
+                die Teilhabechancen der primären Zielgruppe erhöht werden sowie die Personal- und Prozesseffizienz
+                gesteigert werden.</li>
+            <li>Die tertiäre Zielgruppe umfasst Leistungsträger, die auf Grundlage gewonnener Erkenntnisse im Rahmen
+                des Projektes Implikationen für eine regelhafte Refinanzierung assistiver Technologien ableiten
+                können.</li>
+        </ol>
+        <p>Im Rahmen des Verbundvorhabens "Assistive Technik im Wohnen in der Eingliederungshilfe" erwarten wir
+            einen Erkenntnisgewinn, der den Projektbeteiligten eine mittel- bis langfristige
+            Organisationsentwicklung mit Hilfe des zielgerichteten (Teilhabewirksamkeit, Personal- und
+            Prozesseffizienz) Einsatzes assistiver Technologien bietet. Darüber hinaus profitieren ebenfalls
+            interessierte Leistungsberechtigte, Leistungserbringer, Leistungsträger sowie Politik und Öffentlichkeit
+            von den gewonnen Erkenntnissen.</p>
+        <p><strong>Mögliche nachhaltige Wirkung bezogen auf die o.g. Zielgruppen:</strong></p>
+        <ol>
+            <li><strong>Nachhaltige Wirkung für die Leistungsberechtigten</strong>
+                <ol>
+                    <li>Leistungsberechtigte können in der eigenen Häuslichkeit verbleiben</li>
+                    <li>Leistungsberechtigte können in die eigene Häuslichkeit umziehen</li>
+                    <li>Leistungsberechtigte können ihr Leben selbstbestimmter und autonomer gestalten</li>
+                    <li>Leistungsberechtigte erfahren mehr Teilhabe</li>
+                </ol>
+            </li>
+            <li><strong>Nachhaltigkeit für die Leistungserbringer - sekundäre Zielgruppe</strong>
+                <ol>
+                    <li>stärkerer Ressourcenfluss in direkte Assistenzleistungen möglich</li>
+                    <li>weniger indirekte Leistungen</li>
+                    <li>weniger Verwaltungsaufwand</li>
+                    <li>Raum für innovative Wohn- und Assistenzangebote</li>
+                </ol>
+            </li>
+            <li><strong>Nachhaltigkeit für die Leistungsträger - tertiäre Zielgruppe</strong>
+                <ol>
+                    <li>Raum für innovative Wohn- und Assistenzangebote</li>
+                    <li>Möglichkeit zum weiteren Abbau von Plätzen in besonderen Wohnformen</li>
+                    <li>Verminderung freiheitsbeschränkender und/oder freiheitsentziehender Maßnahmen</li>
+                    <li>Kostenreduktion</li>
+                </ol>
+            </li>
+        </ol>
+    </section>
+
+    <section id="lenkungsgruppe" class="lenkungsgruppe container mt-5">
+        <h3 class="section-heading2">Lenkungsgruppe</h3>
+        <p>Im Rahmen des von der Sozialstiftung NRW geförderten Verbundvorhabens Assistive Technik im Wohnen in der
+            Eingliederungshilfe ist die Begleitung und Steuerung des Projektes durch eine Lenkungsgruppe vorgesehen.
         </p>
-        <div class="row">
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Das sind wir 1">
+        <p>Diese setzt sich zusammen aus den beteiligten Projektstandorten, der wissenschaftlichen Begleitung, den
+            beiden Landschaftsverbänden Rheinland (LVR) und Westfalen-Lippe (LWL), dem Ministerium für Arbeit,
+            Gesundheit und Soziales des Landes Nordrhein-Westfalen (MAGS), der Selbstvertretung, der Sozialstiftung
+            NRW sowie der Projektkoordination.</p>
+        <p>Folgende Vertretungen sind benannt:</p>
 
-            </div>
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Das sind wir 2">
-            </div>
+        <table border="1" style="border-collapse: collapse; width: 100%;">
+            <tr>
+                <th>Bereich</th>
+                <th>Verantwortliche</th>
+                <th>Funktion</th>
+            </tr>
+            <tr>
+                <td rowspan="3"><strong>Wissenschaft</strong></td>
+                <td>Prof. Kathrin Römisch</td>
+                <td>Lehrgebiet Heilpädagogik und Inklusion, EVH</td>
+            </tr>
+            <tr>
+                <td>Prof. Bernhard Breil</td>
+                <td>Dekan Fachbereich Gesundheitswesen, HSNR</td>
+            </tr>
+            <tr>
+                <td>Prof. Edwin Naroska</td>
+                <td>Lehrgebiet Technische Informatik, HSNR</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><strong>Sozialstiftung NRW</strong></td>
+                <td>Nobert Killewald</td>
+                <td>Vorstand</td>
+            </tr>
+            <tr>
+                <td>Ulrike Hüppe</td>
+                <td>Vorständin</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><strong>LVR</strong></td>
+                <td>Susanne Uhlman</td>
+                <td>Abteilungsleitung 72.70 „Grundsatz Soziale Teilhabe“</td>
+            </tr>
+            <tr>
+                <td>Vera Immekeppel</td>
+                <td>Abteilung 72.70 „Grundsatz Soziale Teilhabe“</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><strong>LWL</strong></td>
+                <td>Bianca Rodekohr</td>
+                <td>Leitung Referat „Sozialplanung und Qualifizierung“</td>
+            </tr>
+            <tr>
+                <td>Annegret Jaspers</td>
+                <td>Gruppenleitung im Referat „Sozialplanung und Qualifizierung“</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><strong>MAGS</strong></td>
+                <td>Dr. Christof Stamm</td>
+                <td>Leiter des Referates „Struktur und Weiterentwicklung der Eingliederungshilfe“</td>
+            </tr>
+            <tr>
+                <td>Linda Gisewski</td>
+                <td>Referat „Struktur und Weiterentwicklung der Eingliederungshilfe“</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><strong>Selbstvertretung</strong></td>
+                <td>Gülay Acar</td>
+                <td>Mitarbeiterin „Ergänzende unabhängige Teilhabeberatung – EUTB“ Gelsenkirchen</td>
+            </tr>
+            <tr>
+                <td>N.N.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><strong>Projektkoordination</strong></td>
+                <td>Dr. Dorothée Schlebrowski</td>
+                <td>Projektkoordination</td>
+            </tr>
+            <tr>
+                <td>Elias Wildförster</td>
+                <td>Projektkoordination</td>
+            </tr>
+        </table>
+        <table border="1" style="border-collapse: collapse; width: 100%;">
+            <tr>
+                <th>Projektstandorte</th>
+                <th>Vertretung</th>
+                <th>Funktion</th>
+            </tr>
+            <tr>
+                <td>Alsbachtal gGmbH</td>
+                <td>Alexandra Niehls</td>
+                <td>Geschäftsführung</td>
+            </tr>
+            <tr>
+                <td>Bethel.regional</td>
+                <td>Aileen Reineke</td>
+                <td>Referentin der Geschäftsführung</td>
+            </tr>
+            <tr>
+                <td>Caritasverband für den Kreis Coesfeld e.V.</td>
+                <td>André Bußkamp</td>
+                <td>Ressortleiter Beratung & Wohnen</td>
+            </tr>
+            <tr>
+                <td>DRK Soziale Einrichtungen des Kreisverbandes Steinfurt gGmbH</td>
+                <td>Ulrich Winter</td>
+                <td>Mitglied der Geschäftsleitung und Prokurist</td>
+            </tr>
+            <tr>
+                <td>Hephata Leben gGmbH</td>
+                <td>Verena Hölken</td>
+                <td>Vorständin Evangelische Stiftung Hephata</td>
+            </tr>
+            <tr>
+                <td>Josefsheim gGmbH</td>
+                <td>Andreas Rieß</td>
+                <td>Vorstand Josefs Gesellschaft</td>
+            </tr>
+            <tr>
+                <td>Lebenshilfe Brakel Wohnen Bildung Freizeit gGmbH</td>
+                <td>Jerome Major</td>
+                <td>Geschäftsführung</td>
+            </tr>
+            <tr>
+                <td>Lebenshilfe Wohnen NRW gGmbH</td>
+                <td>Herbert Frings</td>
+                <td>Geschäftsführung</td>
+            </tr>
+            <tr>
+                <td>Rheinischer Blindenfürsorgeverein 1886 Düren</td>
+                <td>Biljana Weidlich</td>
+                <td>Koordinatorin Eingliederungshilfe</td>
+            </tr>
+            <tr>
+                <td>Sozialwerk St. Georg e.V.</td>
+                <td>Wolfgang Meyer</td>
+                <td>Vorstand</td>
+            </tr>
+        </table>
+    </section>
 
-        </div>
+    <section id="projektkoordination" class="projektkoordination container mt-5">
+        <h3 class="section-heading">Projektkoordination</h3>
+        <p>Die Projektkoordination unterstützt dabei, Einzelerkenntnisse zusammenzutragen, sich untereinander
+            auszutauschen und zu kooperieren.</p>
+        <p>Hierfür leiten sich für die Projektkoordination folgende Aufgabenschwerpunkte ab:</p>
+        <ul>
+            <li>Projektmanagement und Organisation</li>
+            <li>Kommunikation und Kooperation</li>
+            <li>Prozessbegleitung</li>
+            <li>Qualitätssicherung</li>
+            <li>Dokumentation</li>
+            <li>Öffentlichkeitsarbeit</li>
+        </ul>
     </section>
 
     <section id="standorte" class="standorte container mt-5">
         <h3>Projektstandorte</h3>
         <p>Das Projekt "Assistive Technik im Wohnen in der Eingliederungshilfe" wird an zehn Standorten in ganz
-            Nordrhein-Westfalen durchgeführt. Diese Standorte fungieren als Modellregionen, in denen verschiedene Träger
+            Nordrhein-Westfalen durchgeführt. Diese Standorte fungieren als Modellregionen, in denen verschiedene
+            Träger
             der Eingliederungshilfe eng mit technischen Experten und Forschungseinrichtungen zusammenarbeiten.
-            Ziel ist es, maßgescheneiderte Lösungen zu entwickeln und zu erporben, die den individuellen Bedürfnissen
+            Ziel ist es, maßgescheneiderte Lösungen zu entwickeln und zu erporben, die den individuellen
+            Bedürfnissen
             unserer Klienten gerecht werden. Durch den Austausch zwischen den beteiligten Akteuren und di
-            Wissenschaftliche Begleitung des Projektes gewinnen wir wertvolle Erkenntniss, die langfristig in die Praxis
+            Wissenschaftliche Begleitung des Projektes gewinnen wir wertvolle Erkenntniss, die langfristig in die
+            Praxis
             der Eingliederungshilfe in ganz NRW einfließen können.
             Gemeinsam gestalten wir eine inklusive Zukunft, in der jeder Mensch die Unterstützung erhält, die er
             benötigt, um selbstbestimmt leben zu können.</p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987.401015441908!2d6.567342576273838!3d51.316634124621835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b01a45e8c8ab%3A0xf27557e320a1cda8!2sHochschule%20Niederrhein%3A%20Campus%20Krefeld%20S%C3%BCd!5e0!3m2!1sde!2sde!4v1736162371484!5m2!1sde!2sde"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <h3>Standorte</h3>
-        <p>Hier finden Sie eine Übersicht der Standorte, an denen wir aktiv sind. Jeder Standort spielt eine wichtige
-            Rolle in unserem Vorhaben und bietet einzigartige Möglichkeiten zur Unterstützung und Integration.
-            Klicken Sie auf die einzelnen Links, um mehr über die jeweiligen Standorte und deren Angebote zu erfahren.
-        </p>
-        <div class="row">
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987.401015441908!2d6.567342576273838!3d51.316634124621835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b01a45e8c8ab%3A0xf27557e320a1cda8!2sHochschule%20Niederrhein%3A%20Campus%20Krefeld%20S%C3%BCd!5e0!3m2!1sde!2sde!4v1736162371484!5m2!1sde!2sde"
-                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <button class="btn btn-primary">Mehr</button>
-            </div>
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987.401015441908!2d6.567342576273838!3d51.316634124621835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b01a45e8c8ab%3A0xf27557e320a1cda8!2sHochschule%20Niederrhein%3A%20Campus%20Krefeld%20S%C3%BCd!5e0!3m2!1sde!2sde!4v1736162371484!5m2!1sde!2sde"
-                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <button class="btn btn-primary">Mehr</button>
-            </div>
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987.401015441908!2d6.567342576273838!3d51.316634124621835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b01a45e8c8ab%3A0xf27557e320a1cda8!2sHochschule%20Niederrhein%3A%20Campus%20Krefeld%20S%C3%BCd!5e0!3m2!1sde!2sde!4v1736162371484!5m2!1sde!2sde"
-                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <button class="btn btn-primary">Mehr</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987.401015441908!2d6.567342576273838!3d51.316634124621835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b01a45e8c8ab%3A0xf27557e320a1cda8!2sHochschule%20Niederrhein%3A%20Campus%20Krefeld%20S%C3%BCd!5e0!3m2!1sde!2sde!4v1736162371484!5m2!1sde!2sde"
-                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <button class="btn btn-primary">Mehr</button>
-            </div>
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987.401015441908!2d6.567342576273838!3d51.316634124621835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b01a45e8c8ab%3A0xf27557e320a1cda8!2sHochschule%20Niederrhein%3A%20Campus%20Krefeld%20S%C3%BCd!5e0!3m2!1sde!2sde!4v1736162371484!5m2!1sde!2sde"
-                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <button class="btn btn-primary">Mehr</button>
-            </div>
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987.401015441908!2d6.567342576273838!3d51.316634124621835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b01a45e8c8ab%3A0xf27557e320a1cda8!2sHochschule%20Niederrhein%3A%20Campus%20Krefeld%20S%C3%BCd!5e0!3m2!1sde!2sde!4v1736162371484!5m2!1sde!2sde"
-                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <button class="btn btn-primary">Mehr</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987.401015441908!2d6.567342576273838!3d51.316634124621835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b01a45e8c8ab%3A0xf27557e320a1cda8!2sHochschule%20Niederrhein%3A%20Campus%20Krefeld%20S%C3%BCd!5e0!3m2!1sde!2sde!4v1736162371484!5m2!1sde!2sde"
-                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <button class="btn btn-primary">Mehr</button>
-            </div>
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987.401015441908!2d6.567342576273838!3d51.316634124621835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b01a45e8c8ab%3A0xf27557e320a1cda8!2sHochschule%20Niederrhein%3A%20Campus%20Krefeld%20S%C3%BCd!5e0!3m2!1sde!2sde!4v1736162371484!5m2!1sde!2sde"
-                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <button class="btn btn-primary">Mehr</button>
-            </div>
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987.401015441908!2d6.567342576273838!3d51.316634124621835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b01a45e8c8ab%3A0xf27557e320a1cda8!2sHochschule%20Niederrhein%3A%20Campus%20Krefeld%20S%C3%BCd!5e0!3m2!1sde!2sde!4v1736162371484!5m2!1sde!2sde"
-                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <button class="btn btn-primary">Mehr</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 d-flex flex-column align-items-center">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987.401015441908!2d6.567342576273838!3d51.316634124621835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b01a45e8c8ab%3A0xf27557e320a1cda8!2sHochschule%20Niederrhein%3A%20Campus%20Krefeld%20S%C3%BCd!5e0!3m2!1sde!2sde!4v1736162371484!5m2!1sde!2sde"
-                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <button class="btn btn-primary">Mehr</button>
-            </div>
-        </div>
+        <table border="1" style="border-collapse: collapse; width: 100%;">
+            <tr>
+                <td>Leistungserbringer</td>
+                <td>Sozialwerk St. Georg e.V.</td>
+                <td rowspan="3" style="width: 300px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.6689697089336!2d7.035873676711681!3d51.5360098717734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b96d1cc9c3f5%3A0xe6785b02a912ed22!2sNordsternstra%C3%9Fe%2043A%2FB%2C%2045899%20Gelsenkirchen!5e0!3m2!1sde!2sde!4v1707130672001!5m2!1sde!2sde"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </td>
+            </tr>
+            <tr>
+                <td>Projektstandort</td>
+                <td>Nordsternstraße 43a/b</td>
+            </tr>
+            <tr>
+                <td>Adresse Projektstandort</td>
+                <td>Nordsternstraße 43a/b, 45899 Gelsenkirchen</td>
+            </tr>
+            <tr>
+                <td>Kurzbeschreibung Projektstandort und Zielgruppe</td>
+                <td colspan="2">
+                    In der Außenwohngruppe Nordsternstraße in Gelsenkirchen leben acht Menschen mit kognitiven
+                    Beeinträchtigungen kombiniert mit Beeinträchtigungen der sozialen und emotionalen Entwicklung im
+                    Alter von 24 - 60 Jahren.<br>
+                    Die Menschen sind auf Assistenz bei der selbstbestimmten, alltäglichen Lebensführung, der
+                    individuellen und gemeinsamen Freizeitgestaltung, im medizinischen und pflegerischen Bereich sowie
+                    beim Aufbau und der Gestaltung der Kommunikation und Interaktion mit anderen angewiesen.
+                </td>
+            </tr>
+            <tr>
+                <td>Ansprechpersonen</td>
+                <td colspan="2">
+                    Hakan Uzunbas<br>
+                    <a href="mailto:H.Uzunbas@sozialwerk-st-georg.de">H.Uzunbas@sozialwerk-st-georg.de</a><br>
+                    0170 8457688
+                </td>
+            </tr>
+        </table>
     </section>
 
     <section id="Technologien2" class="technologien container mt-5">
         <h3 class="section-heading">ASSISTIVE TECHNOLOGIEN IM BEREICH WOHNEN</h3>
         <p>Assistive Technologien spielen eine entscheidende Rolle dabei, das Wohnen für Menschen mit unterschiedlichen
-            Bedürfnissen komfortabler und sicherer zu gestalten.
-            Hier sond einige innovative Lösungen, die den Alltag erleichtern und die Selbstständigkeit fördern:
-        </p>
+            Bedürfnissen komfortabler und sicherer zu gestalten. Hier sind einige innovative Lösungen, die den Alltag
+            erleichtern und die Selbstständigkeit fördern:</p>
+
         <h4 class="section-heading2">SMART HOME SERVICE</h4>
-        <div class="col-md-4 d-flex flex-column align-items-center">
-            <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 1">
+        <div class="technologie-item d-flex flex-column-reverse flex-md-row align-items-center mb-4">
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 1">
+            </div>
+            <div>
+                <p>Diese Systeme integrieren verschiedene Technologien, um das Zuhause intelligenter zu machen. Sie
+                    ermöglichen die Steuerung von Licht, Heizung und anderen Geräten über Sprachbefehle oder mobile
+                    Apps. Dies ist besonders hilfreich für Menschen mit Mobilitätseinschränkungen.</p>
+            </div>
         </div>
-        <p>Diese Systeme integrieren verschiedene Technologien, um das Zuhause intelligenter zu machen. Sie ermöglichen
-            die Steuerung von Licht, Heizung und anderen Geräten über Sprachbefehle oder mobile Apps. Dies ist besonders
-            hilfreich für Menschen mit Mobilitätseinschränkungen.</p>
+
         <h4 class="section-heading2">KI-GESTÜTZTE UNTERSTÜTZUNG FÜR PFLEGEFACHKRÄFTE</h4>
-        <div class="col-md-4 d-flex flex-column align-items-center">
-            <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 2">
+        <div class="technologie-item d-flex flex-column flex-md-row-reverse align-items-center mb-4">
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 2">
+            </div>
+            <div>
+
+                <p>Künstliche Intelligenz (KI) - KI-Systeme können den Bedarf an Unterstützung erkennen, indem sie
+                    Verhaltensmuster überwachen und Veränderungen identifizieren. Dadurch werden Reaktionszeiten
+                    verkürzt, da Pflegekräfte sofort informiert werden, wenn Hilfe benötigt wird. Diese Technologie
+                    verbessert die Lebensqualität der Betroffenen erheblich.</p>
+            </div>
         </div>
-        <p>Künstliche Intelligenz (KI) - KI-Systeme können den Bedarf an Unterstützung erkennen, indem sie
-            Verhaltensmuster überwachen und Veränderungen identifizieren. Dadurch werden Reaktionszeiten verkürzt, da
-            Pflegekräfte sofort informiert werden, wenn Hilfe benötigt wird.
-            Diese Technologie verbessert die Lebensqualität der Betroffenen erheblich.
-        </p>
+
         <h4 class="section-heading2">INTELLIGENTE HERDABSCHALTUNG</h4>
-        <div class="col-md-4 d-flex flex-column align-items-center">
-            <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 3">
+        <div class="technologie-item d-flex flex-column-reverse flex-md-row align-items-center">
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <img src="https://via.placeholder.com/300" class="img-fluid mb-3" alt="Technologie 3">
+            </div>
+            <div>
+                <p>In der Küche sorgt eine intelligente Herdabschaltung dafür, dass der Herd automatisch ausgeht, wenn
+                    das Haus verlassen wird. Diese Funktion bietet nicht nur Sicherheit, sondern auch Seelenfrieden für
+                    Angehörige und Pflegekräfte.</p>
+            </div>
         </div>
-        <p>In der Küche sorgt eine intelligente Herdabschaltung dafür, dass der Herd automatisch ausgeht, wenn das Haus
-            verlassen wird. Diese Funktion bietet nicht nur Sicherheit, sondern auch Seelenfrieden für Angehörige und
-            Pflegekräfte.</p>
+    </section>
+
+
+
+    <section id="wissenschaftliche" class="wissenschaftliche container mt-5">
+        <h3 class="section-heading">Wissenschaftliche Begleitung</h3>
+        <p>Das Verbundvorhaben Assistive Technik im Wohnen in der Eingliederungshilfe wird hinsichtlich folgender
+            Fragestellung von der Evangelischen Hochschule Rheinland-Westfalen-Lippe sowie der Hochschule Niederrhein
+            wissenschaftlich begleitet:</p>
+        <p><i>Welche Auswirkungen hat der Einsatz assistiver Technologien auf die Teilhabewirksamkeit, sowie auf die
+                Personal- und Prozesseffizienz?</i></p>
+        <p>Die Evangelische Hochschule Rheinland-Westfalen-Lippe wird sich schwerpunktmäßig mit der Dimension der
+            Teilhabewirksamkeit befassen, während die Hochschule Niederrhein die Dimensionen Personal- und
+            Prozesseffizienz im Fokus hat. Grundlegend ist allerdings, dass Auswirkungen auf die drei Dimensionen stets
+            zusammen betrachtet werden, wobei die Dimension der Teilhabewirksamkeit prioritär bewertet wird.</p>
     </section>
 
     <section id="kontakt" class="kontakt container mt-5">
         <h3 class="section-heading">WIR FREUEN UNS AUF IHRE NACHRICHT!</h3>
-        <p>Wir setzen uns leidenschaftlich für die Förderung und Integration assistiver Technologien ein. Unser Ziel ist
-            es, Barrieren abzubauen und allen Menschen, unabhängig von ihren Fähigkeiten, den Zugang zu Informationen
+        <p>Wir setzen uns leidenschaftlich für die Förderung und Integration assistiver Technologien ein. Unser Ziel
+            ist
+            es, Barrieren abzubauen und allen Menschen, unabhängig von ihren Fähigkeiten, den Zugang zu
+            Informationen
             und Dienstleistungen zu erleichtern.</p>
-        <p>Haben Sie Fragen zu unseren Produkuten oder Dienstleistungen? Möchten Sie mehr über assistive Technologien
+        <p>Haben Sie Fragen zu unseren Produkuten oder Dienstleistungen? Möchten Sie mehr über assistive
+            Technologien
             erfahren oder benötigen Sie Unterstützung bei der Implementierung? Wir sind hier, um Ihnen zu helfen!
             So erreichen Sie uns:
         </p>
@@ -335,12 +479,14 @@
                 <button class="btn btn-primary">01578 000000</button>
             </div>
         </div>
-        <p>Alternativ können Sie auch unser Kontaktformular nutzen. Füllen Sie einfach die folgenden Felder aus, und wir
+        <p>Alternativ können Sie auch unser Kontaktformular nutzen. Füllen Sie einfach die folgenden Felder aus, und
+            wir
             werden uns so schnell wie möglich mit Ihnen in Verbindung setzen: </p>
         <section id="formularKontakt" class="Formular container mt-5">
             <form>
                 <div style="margin-bottom: 15px;">
-                    <label for="vorname" style="display: block; font-size: 14px; margin-bottom: 5px;">Vorname *</label>
+                    <label for="vorname" style="display: block; font-size: 14px; margin-bottom: 5px;">Vorname
+                        *</label>
                     <input type="text" id="vorname" name="vorname" placeholder="Vorname" required
                         style="width: 100%; padding: 10px; border-radius: 5px; border: none; font-size: 16px;">
                 </div>
@@ -358,7 +504,8 @@
                 <div style="margin-bottom: 15px;">
                     <label for="textfeld" style="display: block; font-size: 14px; margin-bottom: 5px;">Nachricht
                         *</label>
-                        <textarea name="textfeld" id="textfeld" placeholder="Nachricht" required style="width: 100%; padding: 10px; border-radius: 5px; border: none; font-size: 16px;"></textarea>
+                    <textarea name="textfeld" id="textfeld" placeholder="Nachricht" required
+                        style="width: 100%; padding: 10px; border-radius: 5px; border: none; font-size: 16px;"></textarea>
                 </div>
                 <div style="display: flex; justify-content: space-between; gap: 10px;">
                     <button type="submit"
@@ -371,15 +518,19 @@
     <section id="login" class="login container mt-5">
         <h3 class="section-heading">WILLKOMMEN ZUM LOGIN-BEREICH</h3>
         <p>Herzlich Willkommen im Login-Bereich unserer Webseite</p>
-        <p>Hier haben Sie die Möglichkeit, sich als Projektmitglied anzumelden und Zugang zu exklusiven Informationen
-            und Ressourcen zu erhalten. Tauschen sie sich mit anderen Projektteilnehmer:innen aus teilen sie akutelle
+        <p>Hier haben Sie die Möglichkeit, sich als Projektmitglied anzumelden und Zugang zu exklusiven
+            Informationen
+            und Ressourcen zu erhalten. Tauschen sie sich mit anderen Projektteilnehmer:innen aus teilen sie
+            akutelle
             Informationen.</p>
-        <p>Bitte geben Sie ihre Zugangsdaten in die vorgesehenen Felder ein. Sollten Sie noch kein Mitglied sein oder
+        <p>Bitte geben Sie ihre Zugangsdaten in die vorgesehenen Felder ein. Sollten Sie noch kein Mitglied sein
+            oder
             Ihre Zugangsdaten vergessen haben, wenden Sie sich bitte an unser Team.</p>
         <section id="loginFormular" class="loginFormular container mt-5">
             <form>
                 <div style="margin-bottom: 15px;">
-                    <label for="vorname" style="display: block; font-size: 14px; margin-bottom: 5px;">Vorname *</label>
+                    <label for="vorname" style="display: block; font-size: 14px; margin-bottom: 5px;">Vorname
+                        *</label>
                     <input type="text" id="vorname" name="vorname" placeholder="Vorname" required
                         style="width: 100%; padding: 10px; border-radius: 5px; border: none; font-size: 16px;">
                 </div>
@@ -425,16 +576,15 @@
                         <img src="https://via.placeholder.com/150x50" alt="Logo" class="img-fluid">
                     </a>
                 </div>
-    
+
                 <!-- Mittleres Container für Links -->
                 <div class="col-md-6">
                     <div class="row">
                         <!-- Links Spalte 1 -->
                         <div class="col-6">
                             <ul class="list-unstyled">
-                                <li><a href="#" class="text-white" data-target="wir">Über uns</a></li>
-                                <li><a href="#" class="text-white" data-target="Technologien2">Technologien</a></li>
                                 <li><a href="#" class="text-white" data-target="kontakt">Kontakt</a></li>
+                                <li><a href="#" class="text-white" data-target="login">Login</a></li>
                             </ul>
                         </div>
                         <!-- Links Spalte 2 -->
@@ -442,28 +592,26 @@
                             <ul class="list-unstyled">
                                 <li><a href="#" class="text-white">Impressum</a></li>
                                 <li><a href="#" class="text-white">Datenschutz</a></li>
-                                <li><a href="#" class="text-white" data-target="login">Login</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Rechtes Container für Social Media Links -->
                 <div class="col-md-3 d-flex justify-content-around align-items-center">
-                    <a href="https://twitter.com" target="_blank" class="text-white">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/X_Logo_2023.svg" alt="X" class="img-fluid mb-2" style="width: 30px;">
-                    </a>
                     <a href="https://www.facebook.com" target="_blank" class="text-white">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="img-fluid mb-2" style="width: 30px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                            alt="Facebook" class="img-fluid mb-2" style="width: 30px;">
                     </a>
                     <a href="https://www.instagram.com" target="_blank" class="text-white">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="img-fluid mb-2" style="width: 30px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                            alt="Instagram" class="img-fluid mb-2" style="width: 30px;">
                     </a>
                 </div>
             </div>
         </div>
     </footer>
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>

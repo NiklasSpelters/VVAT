@@ -1,0 +1,68 @@
+<!--
+        <section id="erfahrungen" class="container text-center my-5">
+            <h2 class="section-heading">ERFAHRUNGEN</h2>
+            <div id="erfahrungenCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item active">
+                        <div class="testimonial">
+                            <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Max Mustermann">
+                            <blockquote class="blockquote">
+                                <p class="mb-3">„Die Einführung assistiver Technologien hat unsere Arbeit
+                                    revolutioniert.
+                                    Sie ermöglichen es uns, individueller auf die Bedürfnisse unserer Klient:innen
+                                    einzugehen und gleichzeitig den Pflegeaufwand zu reduzieren. Es ist inspirierend zu
+                                    erleben, wie Technik und Menschlichkeit Hand in Hand gehen.“</p>
+                            </blockquote>
+                            <footer class="blockquote-footer">
+                                MAX MUSTERMANN <br>
+                                <cite title="Pflegefachkraft">PFLEGEFACHKRAFT</cite>
+                            </footer>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Anna Beispiel">
+                            <blockquote class="blockquote">
+                                <p class="mb-3">„Dank assistiver Technologien können wir unseren Alltag effizienter
+                                    gestalten und unseren Klienten gleichzeitig mehr Selbstständigkeit ermöglichen. Eine
+                                    beeindruckende Entwicklung!“</p>
+                            </blockquote>
+                            <footer class="blockquote-footer">
+                                ANNA BEISPIEL <br>
+                                <cite title="Ergotherapeutin">ERGOTHERAPEUTIN</cite>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#erfahrungenCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Vorherige</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#erfahrungenCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Nächste</span>
+                </button>
+            </div>
+        </section>
+    -->
+
+<!-- 
+        <section id="faq" class="faq container mt-5">
+            <h3>FAQ</h3>
+            <p><strong>Was sind assistive Technologien?</strong> Assistive Technologien sind Geräte oder Systeme, die
+                Menschen mit Assistenzbedarf helfen, ihre Selbstständigkeit zu erhöhen und ihre Lebensqualität zu
+                verbessern.</p>
+            <p><strong>Wie helfen assistive Technologien im Alltag?</strong> Sie ermöglichen es, alltägliche Aufgaben
+                wie
+                Kochen, Reinigen oder Kommunikation zu erleichtern.</p>
+            <p><strong>Wer kann assistive Technologien beantragen?</strong> Menschen mit körperlichen oder geistigen
+                Beeinträchtigungen können sie beantragen, wenn sie Unterstützung im Alltag benötigen.</p>
+        </section>
+
+    </section>
+-->

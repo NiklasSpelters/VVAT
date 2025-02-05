@@ -17,6 +17,24 @@ section.active {
     display: block; /* Nur die aktive Section sichtbar machen */
 }
 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
 /* Sicherstellen, dass untergeordnete Sections innerhalb von #start ebenfalls sichtbar sind, wenn #start aktiv ist */
 #start.active section {
     display: block; /* Alle Untersections in der Start-Section sichtbar machen */
@@ -94,6 +112,22 @@ section.active {
     margin: 0 auto; /* Zentriert den Kasten */
     z-index: 1; /* Stellt sicher, dass der Kasten über dem Bild liegt */
     border-radius: 15px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* Vertikale Zentrierung der Bilder und des Texts */
+    width: 100%;
+}
+.left-image, .right-image {
+    width: 20%;  /* Oder eine andere Breite, die den Abstand passt */
+    height: auto;
+}
+
+.text-content {
+    text-align: center;
+    flex-grow: 1;  /* Der Textbereich wächst, um den verbleibenden Platz einzunehmen */
+    padding: 0 20px;  /* Etwas Abstand zu den Bildern */
 }
 
 .header-box h1 {
